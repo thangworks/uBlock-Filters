@@ -1,0 +1,76 @@
+! Title: DNS - Lam viec quang cao (allowlist)
+! Description: Mo khoa cac nen tang quang cao/tracking can cho cong viec. CHI ap cho thiet bi lam viec,
+!              dat SAU dns-family.txt va cac blocklist khac. Moi dong deu $important de thang moi luat chan.
+! Homepage: https://github.com/thangworks/uBlock-Filters
+! Expires: 1 days
+! Updated: 2026-10-22
+! Gioi han: moi file < 1000 dong (AdGuard Home gioi han so dong custom rules).
+
+! ===== GOOGLE ADSENSE / GOOGLE ADS / ADMOB / GA4 / GTM =====
+@@||adsense.google.com^$important
+@@||ads.google.com^$important
+@@||adwords.google.com^$important
+@@||admob.google.com^$important
+@@||adservice.google.com^$important
+@@||adservice.google.com.vn^$important
+@@||analytics.google.com^$important
+@@||tagmanager.google.com^$important
+@@||fundingchoicesmessages.google.com^$important
+@@||imasdk.googleapis.com^$important
+@@||adtrafficquality.google^$important
+@@||doubleclick.net^$important
+@@||googleadservices.com^$important
+@@||googlesyndication.com^$important
+@@||googletagservices.com^$important
+@@||googletagmanager.com^$important
+@@||google-analytics.com^$important
+@@||2mdn.net^$important
+@@||app-measurement.com^$important
+@@||gstatic.com^$important
+
+! ===== PINTEREST ADS =====
+@@||ads.pinterest.com^$important
+@@||business.pinterest.com^$important
+@@||analytics.pinterest.com^$important
+@@||api.pinterest.com^$important
+@@||ct.pinterest.com^$important
+@@||trk.pinterest.com^$important
+@@||log.pinterest.com^$important
+@@||widgets.pinterest.com^$important
+@@||pinimg.com^$important
+
+! ===== META (FACEBOOK / INSTAGRAM) ADS =====
+@@||business.facebook.com^$important
+@@||adsmanager.facebook.com^$important
+@@||graph.facebook.com^$important
+@@||connect.facebook.net^$important
+@@||an.facebook.com^$important
+@@||pixel.facebook.com^$important
+@@||analytics.facebook.com^$important
+
+! ===== TIKTOK ADS / TIKTOK SHOP =====
+@@||ads.tiktok.com^$important
+@@||business-api.tiktok.com^$important
+@@||analytics.tiktok.com^$important
+@@||analytics-sg.tiktok.com^$important
+@@||seller-us.tiktok.com^$important
+@@||seller-us-accounts.tiktok.com^$important
+@@||tiktokshop.optismas.com^$important
+@@||poptok.net^$important
+
+! ===== X (TWITTER) ADS =====
+@@||ads.x.com^$important
+@@||ads-api.x.com^$important
+@@||ads-twitter.com^$important
+@@||analytics.twitter.com^$important
+@@||t.co^$important
+
+! ===== MICROSOFT ADS (BING) =====
+@@||ads.microsoft.com^$important
+@@||bat.bing.com^$important
+
+! ===== AFFILIATE / CONG CU (antidetect, proxy) =====
+@@||mobidea.com^$important
+@@||brightdata.com^$important
+@@||analytics.gologin.com^$important
+@@||api-global.adspower.net^$important

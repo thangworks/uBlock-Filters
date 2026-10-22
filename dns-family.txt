@@ -1,0 +1,117 @@
+! Title: DNS - Gia dinh (chan quang cao, tracking, web thuoc/TPCN)
+! Description: Bo loc DNS dung chung cho ca nha. Cu phap AdGuard (AdGuard Home / AdGuard DNS).
+! Homepage: https://github.com/thangworks/uBlock-Filters
+! Expires: 1 days
+! Updated: 2026-10-22
+!
+! Thiet bi lam quang cao: ap them dns-work-ads.txt (xem README.md).
+! Gioi han: moi file < 1000 dong (AdGuard Home gioi han so dong custom rules).
+
+! ===== 1. ALLOWLIST - luon cho phep =====
+! Nha thuoc chinh thong (bi bat nham boi tu khoa "thuoc" / "pharma" o muc 2)
+@@||nhathuoclongchau.com.vn^$important
+@@||nhathuocankhang.com^$important
+@@||pharmacity.vn^$important
+@@||pharmacity.io^$important
+! He thong / ung dung
+@@||mesu.apple.com^
+@@||microsoft.com^
+@@||msn.com^
+@@||truecaller.com^
+! Phim
+@@/(tvphim|hoathinh3d)/
+
+! ===== 2. THUOC / TPCN / DONG Y CO TRUYEN =====
+/(thuoc|duocpham|duoclieu|duocsi|yduoc|thaoduoc|dongduoc|namduoc|dongy|yhoc|cotruyen|luongy|giatruyen|bacsy|bacsi|tpcn|tpbvsk|thucphamchucnang|dieutri|dactri|chuabenh|chuatri|giamdau|gout|xuongkhop|thoaihoa|tieuduong|huyetap|momau|daday|viemgan|matngu|sinhly|giamcan|giaidoc|taobon|nhuantrang|loitieu|dongtrung|hongsam|nhansam|suckhoe|dantoc)/$important
+/(pharma|vitamin|supplement|herbal|detox|collagen)/$important
+||accgroup.vn^$important
+||anhoahung.vn^$important
+||bioacimin.com^$important
+||bupxanh.com^$important
+||ccrd.org.vn^$important
+||chiaki.vn^$important
+||chuyenkhoanamhoc.com^$important
+||congdongungthu.com^$important
+||dothainam.net^$important
+||duocpqa.com^$important
+||hangngoainhap.com.vn^$important
+||healthylifecare.site^$important
+||helipi.com^$important
+||heposal.vn^$important
+||hewel.com.vn^$important
+||hivn.vn^$important
+||imialeaplus.com^$important
+||japans.vn^$important
+||jiohealth.com^$important
+||medlatec.vn^$important
+||myphamnhat.info^$important
+||nattojintan.com^$important
+||nhatnhat3hoathuyet.vn^$important
+||quatxanhvietnam.com^$important
+||saigonsmilespa.com.vn^$important
+||tambinh.vn^$important
+||thaphaco.com.vn^$important
+||tinhtamfood.com^$important
+||trangphuclinh.vn^$important
+||vienydhdt.gov.vn^$important
+||visymo.com^$important
+||vitatree.com.vn^$important
+||vnha.org.vn^$important
+||zapmeta.com.vn^$important
+
+! ===== 3. QUANG CAO / AFFILIATE / WEB RAC =====
+||amzn.pro^$important
+||blogtin.org^$important
+||ecomobi.blog^$important
+||nbet.com^$important
+||noinauruoukag.wordpress.com^$important
+||qc.x8.games^$important
+||shope.ee^$important
+||static.8cache.com^$important
+||static.truyenfull.io^$important
+
+! ===== 4. SHOPEE LIVE / LIVESTREAM =====
+||chatroom-live.shopee.vn^$important
+||live-apm.shopee.vn^$important
+||qlivecdn.com^$important
+
+! ===== 5. SPOTIFY - quang cao & telemetry (khong chan nhac) =====
+! Quang cao audio/video tren Spotify Free di chung API voi nhac (spclient) nen DNS chi chan duoc mot phan.
+/^((ads|ads-fa|ads-akp|audio-ads|adeventtracker|sap|aet|analytics|pixel|pixel-static|log|log2|metrics|crashdump|bloodhound|bloodhound-off-helios)\.spotify\.(com|net)|ads-sp-lon\.cdn\.spotify\.com|mp3ad\.scdn\.co)$/
+
+! ===== 6. GOOGLE / YOUTUBE - quang cao & tracking =====
+! Quang cao trong video YouTube tai tu googlevideo.com/youtube.com nhu video that -> DNS khong chan duoc.
+! KHONG chan googlevideo.com, youtubei.googleapis.com, s.youtube.com: hong phat video / lich su xem.
+||ads.youtube.com^
+||adservice.google.com^
+||adservice.google.com.vn^
+||doubleclick.net^
+||googleadservices.com^
+||googlesyndication.com^
+||googletagservices.com^
+||google-analytics.com^
+! Quang cao video trong app/game (Google IMA SDK) va Firebase Analytics
+||imasdk.googleapis.com^
+||app-measurement.com^
+
+! ===== 7. TIKTOK - quang cao & tracking =====
+||analytics.tiktok.com^
+||analytics-sg.tiktok.com^
+||pangle.io^
+||pangolin-sdk-toutiao.com^
+||pangolin-sdk-toutiao-b.com^
+||pglstatp-toutiao.com^
+
+! ===== 8. FACEBOOK - quang cao & tracking =====
+! Quang cao trong feed Facebook/Instagram di chung graph.facebook.com/fbcdn.net -> DNS khong chan duoc.
+! connect.facebook.net = Pixel/SDK tren web khac; chan co the lam hong nut "Dang nhap bang Facebook".
+||connect.facebook.net^
+||an.facebook.com^
+||analytics.facebook.com^
+||pixel.facebook.com^
+
+! ===== 9. PINTEREST / X - quang cao & tracking =====
+||ct.pinterest.com^
+||trk.pinterest.com^
+||analytics.twitter.com^
+||static.ads-twitter.com^
