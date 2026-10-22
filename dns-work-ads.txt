@@ -4,6 +4,7 @@
 ! Homepage: https://github.com/thangworks/uBlock-Filters
 ! Expires: 1 days
 ! Updated: 2026-10-22
+! Gioi han: moi file < 1000 dong (AdGuard Home gioi han so dong custom rules).
 
 ! ===== GOOGLE ADSENSE / GOOGLE ADS / ADMOB / GA4 / GTM =====
 @@||adsense.google.com^$important
@@ -11,6 +12,7 @@
 @@||adwords.google.com^$important
 @@||admob.google.com^$important
 @@||adservice.google.com^$important
+@@||adservice.google.com.vn^$important
 @@||analytics.google.com^$important
 @@||tagmanager.google.com^$important
 @@||fundingchoicesmessages.google.com^$important
@@ -23,6 +25,7 @@
 @@||googletagmanager.com^$important
 @@||google-analytics.com^$important
 @@||2mdn.net^$important
+@@||app-measurement.com^$important
 @@||gstatic.com^$important
 
 ! ===== PINTEREST ADS =====
